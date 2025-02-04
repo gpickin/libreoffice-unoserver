@@ -53,7 +53,7 @@ jobs:
           tags: type=raw,value=${{ matrix.version }}
 
       - name: Build and push
-        uses: docker/bake-action@v3
+        uses: docker/bake-action@v5
         env:
           ALPINE_VERSION: ${{ matrix.version }}
         with:

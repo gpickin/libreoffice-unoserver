@@ -7,7 +7,7 @@ on:
 
   # Build daily on 00:00 UTC
   schedule:
-    - cron: '0 0 * * SUN'
+    - cron: "0 0 * * SUN"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -57,7 +57,7 @@ jobs:
             type=sha,prefix=${{ matrix.version }}-
 
       - name: Build and push
-        uses: docker/bake-action@v3
+        uses: docker/bake-action@v5
         env:
           ALPINE_VERSION: ${{ matrix.version }}
         with:
