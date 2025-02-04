@@ -20,7 +20,7 @@ push:
 	docker push ${DOCKER_META_IMAGES}:${DOCKER_META_VERSION}
 
 run:
-	docker run -it --rm -p 2004:2004 ${DOCKER_META_IMAGES}:${DOCKER_META_VERSION}
+	docker run -it --rm -p 8443:8443 ${DOCKER_META_IMAGES}:${DOCKER_META_VERSION}
 
 shell:
-	docker run -it --rm -p 2004:2004 ${DOCKER_META_IMAGES}:${DOCKER_META_VERSION} sh
+	docker run -it --rm -p 8443:8443 ${DOCKER_META_IMAGES}:${DOCKER_META_VERSION} sh
