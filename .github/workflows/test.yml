@@ -49,7 +49,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: libreofficedocker/libreoffice-unoserver
+          images: gpickin/libreoffice-unoserver
           tags: type=raw,value=${{ matrix.version }}
 
       - name: Build and push

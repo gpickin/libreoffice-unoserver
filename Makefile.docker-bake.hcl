@@ -1,11 +1,11 @@
 variable "ALPINE_VERSION" {
-    default = "3.18"
+    default = "3.19"
 }
 variable "S6_OVERLAY_VERSION" {
     default = "v3.1.5.0"
 }
 variable "UNOSERVER_REST_API_VERSION" {
-    default = "v0.8.0"
+    default = "v0.8.5"
 }
 
 variable "DOCKER_META_IMAGES" {}

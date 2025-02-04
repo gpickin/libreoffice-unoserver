@@ -5,19 +5,19 @@ on:
     branches:
       - main
     paths:
-      - 'readme.sh'
-      - 'version-lock.json'
-      - 'README.template.md'
+      - "readme.sh"
+      - "version-lock.json"
+      - "README.template.md"
   workflow_dispatch:
     inputs:
       version:
-        description: 'The version of nginx to generate the README for'
+        description: "The version of nginx to generate the README for"
         required: false
         type: string
   workflow_call:
     inputs:
       version:
-        description: 'The version of nginx to generate the README for'
+        description: "The version of nginx to generate the README for"
         required: true
         type: string
 
@@ -54,4 +54,4 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: libreofficedocker/libreoffice-unoserver
+          repository: gpickin/libreoffice-unoserver

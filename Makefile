@@ -1,7 +1,7 @@
 DOCKER_BAKE_FILE := -f Makefile.docker-bake.hcl
 ALPINE_VERSION := 3.16
 
-DOCKER_META_IMAGES := libreofficedocker/libreoffice-unoserver
+DOCKER_META_IMAGES := gpickin/libreoffice-unoserver
 DOCKER_META_VERSION := test
 
 it:
