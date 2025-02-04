@@ -1,6 +1,6 @@
 services:
   libreoffice:
-    image: libreofficedocker/libreoffice-unoserver:3.18
+    image: gpickin/libreoffice-unoserver:3.14-cc2ac45
     restart: always
     # environment:
     #   - UNOSERVER_CMD=unoserver

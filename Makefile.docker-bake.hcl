@@ -5,7 +5,7 @@ variable "S6_OVERLAY_VERSION" {
     default = "v3.1.5.0"
 }
 variable "UNOSERVER_REST_API_VERSION" {
-    default = "v0.8.5"
+    default = "v0.8.6"
 }
 
 variable "DOCKER_META_IMAGES" {}
